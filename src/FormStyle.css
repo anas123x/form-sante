@@ -1,0 +1,30 @@
+.full-screen-div {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./logo-sante.jpg'); /* Replace 'path/to/your/image.jpg' with your image path */
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    /* Other styles as needed */
+  }
+  /* Make form elements transparent */
+.form-container input,
+.form-container select,
+.form-container label,
+.form-container button {
+  background-color: transparent;
+  border-color: black; /* Adding a border color for better visibility */
+  color: black; /* Text color */
+}
+
+/* Adjust placeholder color for input fields */
+.form-container input::placeholder {
+  color: black; /* Placeholder color */
+}
