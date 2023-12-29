@@ -198,20 +198,20 @@ const Form = () => {
       </div>
   <div class="mb-4">
     <h5 >Avez-vous des conditions médicales ou des allergies que le club devrait connaître pour assurer votre sécurité ?</h5>
-    <input onChange={handleMedicalConditionsChange} class="form-control custom-input" />
+    <textarea onChange={handleMedicalConditionsChange} class="form-control custom-input" />
   </div>
   <div class="mb-4">
     <h5 >Avez-vous de l'expérience dans le domaine de la santé?</h5>
-    <input  onChange={handleHealthExperienceChange} class="form-control custom-input" />
+    <textarea  onChange={handleHealthExperienceChange} class="form-control custom-input" />
  
   </div>
   <div class="mb-4">
     <h5 >Avez-vous de l'expérience dans le domaine dans des autres clubs ?</h5>
-    <input onChange={handleOtherClubsExperienceChange} class="form-control custom-input" />
+    <textarea onChange={handleOtherClubsExperienceChange} class="form-control custom-input" />
   </div>
   <div class="mb-4">
     <h5 >Quel est votre objectif principal en rejoignant notre club de santé?</h5>
-    <input onChange={handleClubObjectiveChange} class="form-control custom-input" />
+    <textarea onChange={handleClubObjectiveChange} class="form-control custom-input" />
   </div>
   <div class="mb-4">
 
@@ -279,19 +279,19 @@ const Form = () => {
     {selectedDepartement?<div>
       <div class="mt-4">
     <h5 >Comment définiriez-vous le rôle de ce département dans le club de santé ?</h5>
-    <input onChange={handleRoleChange} class="form-control custom-input" />
+    <textarea onChange={handleRoleChange} class="form-control custom-input" />
   </div>
   <div class="mt-4">
     <h5 >Avez-vous des idées  pour améliorer le département de {selectedDepartement}? </h5>
-    <input onChange={handleAmeliorationChange} class="form-control custom-input" />
+    <textarea onChange={handleAmeliorationChange} class="form-control custom-input" />
   </div>
   <div class="mt-4">
     <h5 >Quelles compétences, expériences ou stratégies apportez-vous au département de {selectedDepartement}? </h5>
-    <input onChange={handleApportChange} class="form-control custom-input" />
+    <textarea onChange={handleApportChange} class="form-control custom-input" />
   </div>
   <div class="mt-4">
     <h5 >comment évalueriez-vous l'importance de ce département pour le club et pour vous en tant que responsable ou membre?</h5>
-    <input onChange={handleImportanceChange} class="form-control custom-input" />
+    <textarea onChange={handleImportanceChange} class="form-control custom-input" />
   </div>
     </div>:null}
    <div className='mt-5 d-flex justify-content-center'>

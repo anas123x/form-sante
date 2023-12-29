@@ -19,6 +19,7 @@
   }
   /* Make form elements transparent */
 .form-container input,
+.form-container textarea,
 .form-container select,
 .form-container label
  {
