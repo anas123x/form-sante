@@ -162,7 +162,7 @@ const Form = () => {
     <input onChange={handlePhoneNumberChange} type="number" class="form-control custom-input" />
   </div>
   <div className="mb-4">
-        <h5>Quelle est votre classe ? :</h5>
+        <h5>Quelle est votre branche ?</h5>
         <div className="form-check ">
           <input
             className="form-check-input custom-input"
