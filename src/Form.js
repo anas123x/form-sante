@@ -162,60 +162,51 @@ const Form = () => {
     <input onChange={handlePhoneNumberChange} type="number" class="form-control custom-input" />
   </div>
   <div className="mb-4">
-        <h5>Quelle est votre classe:</h5>
+        <h5>Quelle est votre classe ? :</h5>
         <div className="form-check ">
           <input
             className="form-check-input custom-input"
            
             type="radio"
-            value="1ere"
-            checked={selectedOption === '1ere'}
+            value="ESB"
+            checked={selectedOption === 'ESB'}
             onChange={handleOptionChange}
           />
-          <label className="form-check-label">1ére</label>
+          <label className="form-check-label">ESB</label>
         </div>
         <div className="form-check">
           <input
             className="form-check-input custom-input" 
             type="radio"
-            value="2eme"
-            checked={selectedOption === '2eme'}
+            value="prepa"
+            checked={selectedOption === 'prepa'}
             onChange={handleOptionChange}
           />
-          <label className="form-check-label">2éme</label>
+          <label className="form-check-label">Esprit prépa</label>
         </div>
         <div className="form-check">
           <input
             className="form-check-input custom-input" 
             type="radio"
-            value="3eme"
-            checked={selectedOption === '3eme'}
+            value="ingenieur"
+            checked={selectedOption === 'ingenieur'}
             onChange={handleOptionChange}
           />
-          <label className="form-check-label">3éme</label>
+          <label className="form-check-label">Esprit ingénieur </label>
         </div>
-        <div className="form-check">
-          <input
-            className="form-check-input custom-input" 
-            type="radio"
-            value="4eme"
-            checked={selectedOption === '4eme'}
-            onChange={handleOptionChange}
-          />
-          <label className="form-check-label">4éme</label>
-        </div>
+    
       </div>
   <div class="mb-4">
     <h5 >Avez-vous des conditions médicales ou des allergies que le club devrait connaître pour assurer votre sécurité ?</h5>
     <input onChange={handleMedicalConditionsChange} class="form-control custom-input" />
   </div>
   <div class="mb-4">
-    <h5 >Avez-vous une expérience dans le domaine de santé? </h5>
+    <h5 >Avez-vous de l'expérience dans le domaine de la santé?</h5>
     <input  onChange={handleHealthExperienceChange} class="form-control custom-input" />
  
   </div>
   <div class="mb-4">
-    <h5 >Avez-vous vous une expérience dans des autres clubs</h5>
+    <h5 >Avez-vous de l'expérience dans le domaine dans des autres clubs ?</h5>
     <input onChange={handleOtherClubsExperienceChange} class="form-control custom-input" />
   </div>
   <div class="mb-4">
@@ -248,11 +239,11 @@ const Form = () => {
             className="form-check-input custom-input"
            
             type="radio"
-            value="sante physique"
-            checked={selectedDepartement === 'sante physique'}
+            value="santé et bien être"
+            checked={selectedDepartement === 'santé et bien être'}
             onChange={handleDepartementChange}
           />
-          <label className="form-check-label">Département santé physique</label>
+          <label className="form-check-label">Département santé et bien être</label>
         </div>
         <div className="form-check">
           <input
@@ -287,7 +278,7 @@ const Form = () => {
       </div>
     {selectedDepartement?<div>
       <div class="mt-4">
-    <h5 >Comment définiriez-vous le rôle de ce département dans le club de santé </h5>
+    <h5 >Comment définiriez-vous le rôle de ce département dans le club de santé ?</h5>
     <input onChange={handleRoleChange} class="form-control custom-input" />
   </div>
   <div class="mt-4">
