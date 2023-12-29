@@ -131,7 +131,7 @@ const Form = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:3000', formData);
+      const response = await axios.post('https://sante6backend.onrender.com', formData);
 
       console.log('Form data sent successfully!');
       setSucess(true)
