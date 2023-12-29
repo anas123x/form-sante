@@ -1,15 +1,18 @@
 .full-screen-div {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('./logo-sante.jpg'); /* Replace 'path/to/your/image.jpg' with your image path */
+    
+    background-image: url('./bg-sante.png'); /* Replace 'path/to/your/image.jpg' with your image path */
   background-size:cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
   }
   .form-container {
-    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 50vh;
+    margin-bottom: 50px;
+    
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     border-radius: 10px;
     /* Other styles as needed */
@@ -17,14 +20,86 @@
   /* Make form elements transparent */
 .form-container input,
 .form-container select,
-.form-container label,
-.form-container button {
+.form-container label
+ {
   background-color: transparent;
   border-color: black; /* Adding a border color for better visibility */
   color: black; /* Text color */
 }
-
+.form-container button{
+  background-color: #7e4288;
+  border-color: #7e4288;
+  color: aliceblue;
+}
+.form-container button:disabled{
+  background-color: #7e4288;
+  border-color: #7e4288;
+  color: aliceblue;
+}
+.form-container button:hover{
+  background-color: #e21480;
+  border-color: #e21480;
+}
 /* Adjust placeholder color for input fields */
 .form-container input::placeholder {
   color: black; /* Placeholder color */
+}
+.form-container input[type='radio']:checked {
+  background-color: #e21480; /* Change to your preferred selected color */
+  border-color: #e21480; /* Change to your preferred selected color */
+}
+#dropdown option:hover {
+  background-color: #e21480; /* Change to your preferred hover color */
+  cursor: pointer;
+}
+select.decorated option:hover {
+  box-shadow: 0 0 10px 100px #e21480 inset;
+}
+.custom-input:focus {
+  border-color: #e21480;
+
+   /* Change to your desired color */
+  box-shadow: 0 0 0 0.2rem rgba(226, 20, 60, 0.5);; /* Change to your desired color */
+  /* Additional styling if needed */
+}
+/* Webkit (Chrome, Safari, Opera) */
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #e21480; 
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+  background-color: #e21480; 
+}
+
+/* Microsoft Edge */
+input[type="range"]::-ms-thumb {
+  background-color: #e21480; 
+}
+
+/* Opera */
+input[type="range"]::-o-slider-thumb {
+  background-color: #e21480; 
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  background-color: #e21480; 
+  box-shadow: 0 0 10px 100px #e21480 inset;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb:active {
+  background-color: #e21480; 
+  box-shadow: 0 0 10px 100px #e21480 inset;
+}
+
+/* Microsoft Edge */
+input[type="range"]::-ms-thumb:active {
+  background-color: #e21480; 
+  box-shadow: 0 0 10px 100px #e21480 inset;
+}
+
+/* Opera */
+input[type="range"]::-o-slider-thumb :active{
+  background-color: #e21480; 
+  box-shadow: 0 0 10px 100px #e21480 inset;
 }
