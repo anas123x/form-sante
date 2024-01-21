@@ -206,7 +206,7 @@ const Form = () => {
  
   </div>
   <div class="mb-4">
-    <h5 >Avez-vous de l'expérience dans le domaine dans des autres clubs ?</h5>
+    <h5 >Avez-vous de l'expérience dans des autres clubs ?</h5>
     <textarea onChange={handleOtherClubsExperienceChange} class="form-control custom-input" />
   </div>
   <div class="mb-4">
